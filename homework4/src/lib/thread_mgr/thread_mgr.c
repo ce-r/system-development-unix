@@ -50,36 +50,36 @@ static Init_commandline ips;
 static pthread_mutex_t Th_info_mutex = PTHREAD_MUTEX_INITIALIZER;
 static float delay = 0;
 static int creation_flag = 0;
-static int struct_flag = 0;// MOVE SOMEWHERE ELSE
+static int struct_flag = 0;
 
-static char* cl_file = "";// MOVE SOMEWHERE ELSE
-static int cl_optional_wait = 30;// MOVE SOMEWHERE ELSE
+static char* cl_file = "";
+static int cl_optional_wait = 30;
 
-void set_struct_flag(){// MOVE SOMEWHERE ELSE
+void set_struct_flag(){
     struct_flag = 1;
 }
 
-int get_struct_flag(){// MOVE SOMEWHERE ELSE
+int get_struct_flag(){
     return struct_flag;
 }
 
-void set_file0(char* file){// MOVE SOMEWHERE ELSE
+void set_file0(char* file){
     cl_file = file;
 }
 
-char* get_file0(){// MOVE SOMEWHERE ELSE
+char* get_file0(){
     return cl_file;
 }
 
-void set_optional_wait(int opt_wait){// MOVE SOMEWHERE ELSE
+void set_optional_wait(int opt_wait){
     cl_optional_wait = opt_wait;
 }
 
-int get_optional_wait(){// MOVE SOMEWHERE ELSE
+int get_optional_wait(){
     return cl_optional_wait;
 }
 
-void init_programs_struct(){// MOVE SOMEWHERE ELSE
+void init_programs_struct(){
     ips.file = get_file0();
     ips.optional_wait = get_optional_wait();
 }
